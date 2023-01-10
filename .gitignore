@@ -1,3 +1,5 @@
 *cpython-38.pyc
 .idea
 .venv
+**/dist
+**/__pycache__
