@@ -11,7 +11,7 @@ def logic_function():
     question = []
     elem = 'error'
     for i in range(count_elem):
-        if i == number_substitution-1:
+        if i == number_substitution - 1:
             elem = start_elem
             question.append('..')
             start_elem += arithmetic_progression_elem

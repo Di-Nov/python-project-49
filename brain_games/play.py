@@ -12,7 +12,8 @@ def play_func(logic):
         answer = prompt.string('Your answer: ')
 
         if answer != right_answer:
-            print(f'{answer} is wrong answer ;(. Correct answer was {right_answer} ')
+            print(f'{answer} is wrong answer ;(. '
+                  f'Correct answer was {right_answer} ')
             print(f"Let's try again, {name}!")
             count = 0
 

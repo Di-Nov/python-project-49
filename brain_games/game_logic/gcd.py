@@ -14,4 +14,3 @@ def logic_function():
             break
 
     return f'{number_1} {number_2}', str(result)
-
