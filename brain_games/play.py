@@ -6,7 +6,7 @@ def play_func(logic):
     name = welcome_user()
     print(logic.START)
     count = 0
-    while count != 3:
+    for _ in range(3):
         question, right_answer = logic.logic_function()
         print(f"Question: {question}")
         answer = prompt.string('Your answer: ')
@@ -15,9 +15,9 @@ def play_func(logic):
             print(f'{answer} is wrong answer ;(. '
                   f'Correct answer was {right_answer} ')
             print(f"Let's try again, {name}!")
-            count = 0
-
+            break
         else:
             print('Correct!')
             count += 1
-    print(f'Congratulations, {name}!')
+    if count == 3:
+        print(f'Congratulations, {name}!')
