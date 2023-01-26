@@ -10,7 +10,9 @@ def logic_function():
     random_elem = choice(['+', '-', '*'])
     return calculate_value(random_elem, random_number1, random_number2)
 
+
 def calculate_value(re, rn1, rn2):
+    result = 0
     operator = f'{rn1} {re} {rn2}'
     if re == '+':
         result = rn1 + rn2
