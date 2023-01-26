@@ -1,11 +1,20 @@
 from random import randint
 START = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN = 1
+MAX = 100
 
 
 def logic_function():
-    random_number = randint(1, 100)
-    if random_number % 2 == 0:
+    random_number = randint(MIN, MAX)
+
+    return even_func(random_number)
+
+
+def even_func(rn):
+    result = 'no result'
+    if rn % 2 == 0:
         result = 'yes'
-    elif random_number % 2 != 0:
+    elif rn % 2 != 0:
         result = 'no'
-    return random_number, result
+
+    return rn, result

@@ -1,17 +1,23 @@
 import random
-
 START = 'What number is missing in the progression?'
-
+MIN_PROGRESSION = 5
+MAX_PROGRESSION = 10
+MIN_ELEM = 1
+MAX_ELEM = 50
 
 def logic_function():
-    count_elem = random.randint(5, 10)
-    number_substitution = random.randint(1, count_elem)
-    start_elem = random.randint(1, 100)
-    arithmetic_progression_elem = random.randint(1, 10)
+    count_elem = random.randint(MIN_PROGRESSION, MAX_PROGRESSION)
+    index_substitution = random.randint(1, count_elem)
+    start_elem = random.randint(MIN_ELEM, MAX_ELEM)
+    arithmetic_progression_elem = random.randint(MIN_ELEM, MAX_ELEM)
+
+    return progression_func(count_elem, index_substitution, start_elem, arithmetic_progression_elem)
+
+
+def progression_func(count_elem, index_substitution, start_elem, arithmetic_progression_elem):
     question = []
-    elem = 'error'
     for i in range(count_elem):
-        if i == number_substitution - 1:
+        if i == index_substitution - 1:
             elem = start_elem
             question.append('..')
             start_elem += arithmetic_progression_elem
