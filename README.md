@@ -14,7 +14,6 @@ To win each game you must give **three correct answers in a row** !
 To start the game, type '_make ..._', replacing ... with the name of the game 
 Good luck ;)
 
-[my account on hexlet](https://ru.hexlet.io/u/dmitry_n)\
 [game example brain_even](https://asciinema.org/a/EFilUGQr0iKJaJrcopoarvone)\
 [game example brain_calc](https://asciinema.org/a/R9GgEHagkefdlulzKbrcOEK80)\
 [game example brain_gcd](https://asciinema.org/a/xHMK0I8w7ANjjISPwNjN623CD)\
